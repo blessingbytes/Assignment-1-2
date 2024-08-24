@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  margin-right: 10px;
+}
+
+a :hover {
+  color: red;
+}
+
+nav {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
