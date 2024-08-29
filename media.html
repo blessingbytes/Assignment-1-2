@@ -3,16 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media.css" />
     <title>Nedia</title>
   </head>
   <body>
     <div>
-      <nav>
-        <a href="/about.html" target="_blank">About Me</a>
-        <a href="/form.html">Form</a>
-        <a href="table.html">Table</a>
-        <a href="media.html">Media</a>
-      </nav>
+      <div>
+        <nav>
+          <a href="/about.html" target="_blank">About Me</a>
+          <a href="/form.html">Form</a>
+          <a href="table.html">Table</a>
+          <a href="media.html">Media</a>
+        </nav>
+      </div>
+
+      <main></main>
+        <p>
+          A picture they say, says a thousand words. Here are some media files
+          that I have uploaded for you to view.
+        </p>
+        <picture>
+          <source src="/img/my photo.jpg">
+          <source srcset="img/alt-logo" media="(max-width: 1200px)" >
+          <source srcset="Image\width-1000.jpg" media="(max-width: 1000px)" >
+          <source srcset="Image\width-1400.jpg" media="(min-width: 1400px)" >
+           
+        </picture>
+<!-- 
+        <video src="./video/Video message.mov" controls></video>
+
+        <audio src="./audio/Audio assignment.m4a" controls></audio>
+
+        <label>Receiving My Certificate</label>
+        <img
+          src="./Image/Receiving my certificate.JPG"
+          alt="Unitar International University Convocation set of 2016"
+          width="200"
+          height="200"
+        />
+
+        <label>2014 International Student Conference Malaysia</label>
+        <img
+          src="./Image/At a conference.jpg"
+          alt="2014 International Student Conference Malaysia"
+          width="200"
+          height="200"
+        />
+
+        <img src="./Image/Steez.jpeg" alt="Steez" width="200" height="200" />
+
+        <img
+          src="./Image/Justin&Shade.jpeg"
+          alt="Shade and Justin"
+          width="200"
+          height="200"
+        /> -->
+      </main>
     </div>
   </body>
 </html>
