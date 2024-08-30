@@ -4,61 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="media.css" />
-    <title>Nedia</title>
+    <title>Media</title>
   </head>
   <body>
-    <div>
+    <div class="container">
       <div>
         <nav>
           <a href="/about.html" target="_blank">About Me</a>
-          <a href="/form.html">Form</a>
-          <a href="table.html">Table</a>
-          <a href="media.html">Media</a>
+          <a href="/form.html" target="_blank">Form</a>
+          <a href="table.html" target="_blank">Table</a>
+          <a href="media.html" target="_blank">Media</a>
         </nav>
       </div>
+      <div class="flex">
+        <div>
+          <picture>
+            <!--For Desktop -->
+            <source
+              srcset="./img/my photo.jpg"
+              media="(min-width: 1024px)"
+              type="image/jpeg"
+            />
 
-      <main></main>
-        <p>
-          A picture they say, says a thousand words. Here are some media files
-          that I have uploaded for you to view.
-        </p>
-        <picture>
-          <source src="/img/my photo.jpg">
-          <source srcset="img/alt-logo" media="(max-width: 1200px)" >
-          <source srcset="Image\width-1000.jpg" media="(max-width: 1000px)" >
-          <source srcset="Image\width-1400.jpg" media="(min-width: 1400px)" >
-           
-        </picture>
-<!-- 
-        <video src="./video/Video message.mov" controls></video>
+            <!-- For Tablet -->
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/tablet.jpg"
+              type="image/jpg"
+            />
 
-        <audio src="./audio/Audio assignment.m4a" controls></audio>
+            <!-- For Phone -->
+            <source
+              media="(min-width: 360px)"
+              srcset="./img/phone.jpg"
+              type="image/jpg"
+            />
+            <img src="" alt="" />
+          </picture>
+        </div>
 
-        <label>Receiving My Certificate</label>
-        <img
-          src="./Image/Receiving my certificate.JPG"
-          alt="Unitar International University Convocation set of 2016"
-          width="200"
-          height="200"
-        />
+        <div>
+          <audio controls>
+            <source src="img/audio/audio.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
 
-        <label>2014 International Student Conference Malaysia</label>
-        <img
-          src="./Image/At a conference.jpg"
-          alt="2014 International Student Conference Malaysia"
-          width="200"
-          height="200"
-        />
-
-        <img src="./Image/Steez.jpeg" alt="Steez" width="200" height="200" />
-
-        <img
-          src="./Image/Justin&Shade.jpeg"
-          alt="Shade and Justin"
-          width="200"
-          height="200"
-        /> -->
-      </main>
+        <div>
+          <video controls>
+            <source src="/video/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
     </div>
   </body>
 </html>
